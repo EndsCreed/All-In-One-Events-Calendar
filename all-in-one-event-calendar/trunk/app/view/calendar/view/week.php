@@ -11,6 +11,9 @@
 */
 class Ai1ec_Calendar_View_Week extends Ai1ec_Calendar_View_Abstract {
 
+    protected $_registry;
+    protected $_days_cache;
+
     /* (non-PHPdoc)
      * @see Ai1ec_Calendar_View_Abstract::get_name()
     */
@@ -249,6 +252,7 @@ class Ai1ec_Calendar_View_Week extends Ai1ec_Calendar_View_Abstract {
             $filter,
             true
         );
+
         $this->_update_meta( $week_events );
         // Split up events on a per-day basis
         $all_events = array();

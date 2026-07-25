@@ -11,6 +11,8 @@
  */
 class Ai1ec_Event_Entity extends Ai1ec_Base {
 
+    protected $__orig;
+
     /**
      * Get list of object properties.
      *

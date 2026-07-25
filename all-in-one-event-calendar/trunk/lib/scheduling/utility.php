@@ -11,6 +11,8 @@
  */
 class Ai1ec_Scheduling_Utility {
 
+    protected $_updated;
+
     /**
      * @constant string Name of option
      */
